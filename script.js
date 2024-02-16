@@ -1,9 +1,3 @@
-let downloadBtn = document.getElementById("downloadButton");
-downloadBtn.addEventListener("click", () => {
-  console.log("button Clicked");
-})
-
-
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   effect: "fade",
