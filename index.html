@@ -6,13 +6,12 @@
     <title>Vedanta Saving</title>
     <link rel="stylesheet" href="src/output.css" />
 
-    <!-- Font awesome -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!--  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -30,8 +29,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
+  <body class="font-montserrat">
     <header></header>
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -272,18 +280,17 @@
       <div class="swiper-button-prev"></div>
     </div>
 
+    <!-- Welcome to vedanta Coop -->
     <div
       class="w-full h-auto flex justify-center flex-col md:flex-row px-10 gap-3 font-[poppins]"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
       <div class="bg-slate-200 py-4 rounded-lg px-4">
-        <p class="text-xl font-bold text-gray-600 my-5 font-[poppins]">
+        <p class="text-xl font-bold text-gray-600 my-5">
           Welcome to Vedanta Coop
         </p>
-        <p
-          class="my-3 text-xl text-gray-500 leading-normal mb-12 font-[poppins]"
-        >
+        <p class="my-3 text-xl text-gray-500 leading-normal mb-12">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
           laborum officiis suscipit. Eos temporibus laboriosam aliquam quasi
           aperiam accusantium molestiae id cum. Esse accusamus nemo nesciunt
@@ -349,7 +356,7 @@
           <p class="mt-4 text-2xl">Service1</p>
           <a
             href="#"
-            class="px-3 py-2 border border-red-600 hover:bg-red-600 rounded-lg mt-3 text-normal font-medium hover:text-white "
+            class="px-3 py-2 border border-red-600 hover:bg-red-600 rounded-lg mt-3 text-normal font-medium hover:text-white"
             >Read More</a
           >
         </div>
@@ -410,7 +417,7 @@
         <div class="w-8 h-1 bg-green-600"></div>
       </div>
       <div
-        class="flex flex-col flex-wrap gap-2 md:flex-row items-center justify-center md:my-6"
+        class="flex flex-col flex-wrap gap-2 md:flex-row items-center ml-[20px]  md:my-6"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -474,12 +481,27 @@
             >
           </div>
         </div>
+        <div class="flex items-center mx-4 shadow-md px-2">
+          <img
+            class="w-44 h-40 object-contain mr-2"
+            src="assets/banner4.jpg"
+            alt=""
+          />
+          <div class="flex flex-col items-start gap-1">
+            <p>ललितपुर महानगरपालिकाले हराएका १० सहकारी खारेज गर्यो</p>
+            <a
+              href="#"
+              class="px-6 py-2 bg-green-600 text-white font-semibold rounded mt-2 hover:bg-green-800"
+              >Read More</a
+            >
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Calculation Section -->
     <div
-      class="flex gap-5 flex-wrap items-center justify-evenly my-8"
+      class="flex gap-5 flex-wrap items-center justify-evenly my-8 w-full h-auto"
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom"
       data-aos-duration="4000"
@@ -519,88 +541,105 @@
         <p class="font-semibold tracking-wider mt-2">Downloads</p>
         <!-- <p class="text-slate-700 text-xl">Calculator</p> -->
       </div>
-      <divEMI
+      <div
         class="flex flex-col justify-center items-center bg-white shadow-lg w-44 h-48 rounded hover:shadow-green-300"
       >
         <a href="#"><img src="assets/Notice-1.png" alt="" /></a>
         <p class="font-semibold tracking-wider mt-2">Notice</p>
-        <!-- <p class="text-slate-700 text-xl">Calculator</p> -->
-      </divEMI>
+      </div>
     </div>
 
     <!-- Footer Section -->
+
     <footer
-      class="w-full h-auto bg-green-500 text-white flex justify-between px-6 flex-wrap items-center py-3 mt-9"
+      class="w-full h-auto flex flex-col md:flex-row px-6 py-3 mt-16 md:justify-around justify-center bg-[#fafafa]"
     >
-      <div class="flex flex-col my-4">
-        <p class="font-semibold text-xl">Office Address</p>
+      <div class="flex flex-col mb-4 lg:mr-16">
+        <p class="font-semibold text-xl text-[#278817] mt-4">Office Address</p>
         <div class="mb-2 w-auto h-[2px] bg-slate-200"></div>
         <div class="flex flex-col gap-2">
           <p>
-            <i class="fa-solid fa-location-dot mr-2"></i>[Place Name],
-            [District], Nepal
+            <i class="fa-solid fa-location-dot mr-2 text-[#278817]"></i>[Place
+            Name], [District], Nepal
           </p>
           <p>
-            <i class="fa-solid fa-phone mr-2"></i>
+            <i class="fa-solid fa-phone mr-2 text-[#278817]"></i>
             +977123456789 / +977123456789 <br />
             +977 123 456789
           </p>
           <p>
-            <i class="fa-regular fa-envelope-open mr-2"></i>
+            <i class="fa-regular fa-envelope-open mr-2 text-[#278817]"></i>
             support@abcsaving.coop.np / <br />
             info@abcsaving.coop.np
           </p>
         </div>
       </div>
-      <div class="flex flex-col">
-        <p class="font-semibold text-xl">Quick-Links</p>
+      <div class="flex flex-col lg:mr-16">
+        <p class="font-semibold text-xl text-[#278817] mt-4">Quick-Links</p>
         <div class="mb-2 w-auto h-[2px] bg-slate-200"></div>
         <div class="flex flex-col gap-1">
           <a href="#"
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Annual Calender</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Annual
+            Calender</a
           >
           <a href="#"
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Important Links</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i
+            >Important Links</a
           >
           <a href="#"
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Exchange Rates</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i
+            >Exchange Rates</a
           >
           <a href="#"
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Date Converter</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Date
+            Converter</a
           >
           <a href="#"
-            ><i class="fa-solid fa-chevron-right mr-2"></i>EMI Calculator</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>EMI
+            Calculator</a
           >
         </div>
       </div>
-      <div class="flex flex-col">
-        <p class="font-semibold text-xl">Services</p>
+      <div class="flex flex-col lg:mr-16">
+        <p class="font-semibold text-xl text-[#278817] mt-4">Services</p>
         <div class="mb-2 w-auto h-[2px] bg-slate-200"></div>
         <div class="flex flex-col gap-1">
           <a href=""
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Remittance</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i
+            >Remittance</a
           >
           <a href=""
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Saving Schemes</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Saving
+            Schemes</a
           >
           <a href=""
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Loan Scheme</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Loan
+            Scheme</a
           >
           <a href=""
-            ><i class="fa-solid fa-chevron-right mr-2"></i>Life Insurance</a
+            ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Life
+            Insurance</a
           >
         </div>
       </div>
       <div class="flex flex-col gap-1">
-        <p class="font-semibold text-xl">Download</p>
+        <p class="font-semibold text-xl text-[#278817] mt-4">Download</p>
         <div class="mb-2 w-auto h-[2px] bg-slate-200"></div>
-        <a href=""><i class="fa-solid fa-chevron-right mr-2"></i>Remittance</a>
         <a href=""
-          ><i class="fa-solid fa-chevron-right mr-2"></i>Saving Schemes</a
+          ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i
+          >Remittance</a
         >
-        <a href=""><i class="fa-solid fa-chevron-right mr-2"></i>Loan Scheme</a>
         <a href=""
-          ><i class="fa-solid fa-chevron-right mr-2"></i>Life Insurance</a
+          ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Saving
+          Schemes</a
+        >
+        <a href=""
+          ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Loan
+          Scheme</a
+        >
+        <a href=""
+          ><i class="fa-solid fa-chevron-right mr-2 text-[#278817]"></i>Life
+          Insurance</a
         >
       </div>
     </footer>
