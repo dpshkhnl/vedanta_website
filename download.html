@@ -13,37 +13,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <div class="flex items-center justify-center">
-        <div class="flex items-baseline my-6">
-            <div class="w-8 h-1 bg-green-600"></div>
-            <p class="text-xl font-semibold tracking-wider mx-2">Download</p>
-            <div class="w-8 h-1 bg-green-600"></div>
+    <div class=" flex flex-col mx-10 font-montserrat">
+        <p class="text-xl text-black font-medium capitalize mt-8 2xl:text-5xl">
+          Download List
+          <div class="w-[70px] h-[3px] bg-green-600 mb-3"></div>
+        </p>  
+  
+            
+            <div class="flex flex-col md:flex-row flex-wrap gap-4 relative ">
+            <div class="border p-2 shadow-sm shadow-black my-4 ">
+              <p class="2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maiores.</p>
+              <i class="fa-solid fa-circle-chevron-right mr-2 text-green-700 text-lg"></i><a href="" class="text-green-600 font-semibold hover:text-green-500">Click Here to download</a>
+            </div>
+            <div class="border p-2 shadow-sm shadow-black my-4">
+              <p class="2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maiores.</p>
+              <i class="fa-solid fa-circle-chevron-right mr-2 text-green-700 text-lg"></i><a href="" class="text-green-600 font-semibold hover:text-green-500">Click Here to download</a>
+            </div>
+            <div class="border p-2 shadow-sm shadow-black my-4">
+              <p class="2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maiores.</p>
+              <i class="fa-solid fa-circle-chevron-right mr-2 text-green-700 text-lg"></i><a href="" class="text-green-600 font-semibold hover:text-green-500">Click Here to download</a>
+            </div>
+            <div class="border p-2 shadow-sm shadow-black my-4">
+              <p class="2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maiores.</p>
+              <i class="fa-solid fa-circle-chevron-right mr-2 text-green-700 text-lg"></i><a href="" class="text-green-600 font-semibold hover:text-green-500">Click Here to download</a>
+            </div>
           </div>
-    </div>
-    <div class="flex flex-col mx-5 md:w-50%">
-        <table class=" table-auto">
-            <thead class="bg-green-600 text-white text-center">
-                <tr class="">
-                    <th>Date</th>
-                    <th>Title</th>
-                    <th>Download</th>
-                </tr>
-            </thead>
-            <tbody class="text-center text-sm">
-                <tr>
-                    <td>2080-10-20</td>
-                    <td>All the forms and financials on PDF format Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi aliquid esse sequi distinctio nobis architecto, nulla placeat ab vero?</td>
-                    <td><i class="fa-solid fa-download text-lg" id="downloadButton"></i></td>
-                </tr>
-                <tr>
-                    <td>2080-10-20</td>
-                    <td>All the forms and financials on PDF format</td>
-                    <td><i class="fa-solid fa-download text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+      </div>
 </body>
 </html>
