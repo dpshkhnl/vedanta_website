@@ -217,7 +217,7 @@
 
     <!-- News and Latest -->
     <div
-      class="flex flex-col items-center flex-wrap justify-center bg-red-700 container"
+      class="flex flex-col items-center flex-wrap justify-center container mx-auto"
     >
       <div class="flex items-baseline">
         <div class="w-8 h-1 bg-green-600"></div>
@@ -226,7 +226,11 @@
         </p>
         <div class="w-8 h-1 bg-green-600"></div>
       </div>
-      <div class="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 mt-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div class="flex items-center shadow-md px-2">
           <img
             class="w-44 h-40 object-cover mr-2"
@@ -308,7 +312,7 @@
 
     <!-- Calculation Section -->
     <div
-      class="flex gap-5 flex-wrap items-center justify-center my-8 mx-5"
+      class="flex gap-9 flex-wrap items-center justify-center my-16 mx-auto container"
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom"
       data-aos-duration="4000"
@@ -346,18 +350,25 @@
       >
         <a href="#"><img src="assets/Foreign-Exchange-1-1.png" alt="" /></a>
         <p class="font-semibold tracking-wider mt-2">Downloads</p>
-        <!-- <p class="text-slate-700 text-xl">Calculator</p> -->
+        <p class="text-slate-700 text-xl">Calculator</p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center bg-white shadow-lg w-44 h-48 rounded hover:shadow-green-300"
+      >
+        <a href="#"><img src="assets/Notice-1.png" alt="" /></a>
+        <p class="font-semibold tracking-wider mt-2">Downloads</p>
+        <p class="text-slate-700 text-xl">Calculator</p>
       </div>
     </div>
 
     <!-- Footer Section -->
 
     <footer
-      class="w-full h-auto flex flex-col md:flex-row px-6 py-3 mt-16 md:justify-around justify-center bg-[#fafafa]"
+      class="container mx-auto h-auto flex flex-col md:flex-row px-6 py-3 mt-16 md:justify-between justify-center bg-[#fafafa]"
     >
       <div class="flex flex-col mb-4 lg:mr-16">
         <p class="font-semibold text-xl text-[#278817] mt-4">Office Address</p>
-        <div class="mb-2 w-auto h-[2px] bg-slate-200"></div>
+        <div class="mb-2 h-[2px] bg-slate-200"></div>
         <div class="flex flex-col gap-2">
           <p>
             <i class="fa-solid fa-location-dot mr-2 text-[#278817]"></i>[Place
