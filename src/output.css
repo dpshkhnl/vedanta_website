@@ -1207,6 +1207,10 @@ video {
   gap: 2.25rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1961,6 +1965,11 @@ video {
   .md\:mx-9 {
     margin-left: 2.25rem;
     margin-right: 2.25rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:hidden {
