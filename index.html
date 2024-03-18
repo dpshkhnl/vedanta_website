@@ -33,25 +33,83 @@
   </head>
   <body>
     <header></header>
-    <!-- <nav>
-      <div class="">
-        <img class="w-2" src="assets/logo1.png" alt="" />
+    <!-- Navbar Section -->
+    <nav
+      class="container bg-green-600 mx-auto flex justify-between items-center px-4 py-2"
+    >
+      <div class="flex">
+        <img class="md:w-24 w-20" src="assets/logo1.png" alt="" />
+        <div class="flex flex-col uppercase text-white font-bold mt-4 ml-2">
+          <p class="text-2xl">vedanta saving &</p>
+          <p class="text-2xl">credit cooperative ltd.</p>
+        </div>
       </div>
-      <div class="">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>
-            Service
-            <ul>
-              <li></li>
+      <div class="hidden md:block">
+        <ul class="flex font-montserrat text-white font-bold">
+          <li class="mx-3 font-medium relative dropdown">
+            <a href="#" class="inline-block">About us</a>
+            <i class="fa-solid fa-angle-down"></i>
+            <ul
+              class="dropdown-menu absolute hidden bg-green-600 z-50 min-w-[15rem] rounded-lg shadow-lg mt-2"
+            >
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Company Profile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Message From Chairman</a
+                >
+              </li>
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Board of Director</a
+                >
+              </li>
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Management Team</a
+                >
+              </li>
             </ul>
           </li>
-          <li>Gallery</li>
-          <li>Notice</li>
+          <li class="mx-3 font-medium relative dropdown select-none">
+            Services
+            <i class="fa-solid fa-angle-down"></i>
+            <ul
+              class="dropdown-menu hidden absolute bg-green-600 z-50 min-w-[15rem] rounded-lg overflow-hidden shadow-lg mt-2"
+            >
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Saving Schema</a
+                >
+              </li>
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >Loan Schema</a
+                >
+              </li>
+              <li>
+                <a href="#" class="px-3 py-2 block hover:bg-green-700"
+                  >General Schema</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mx-3 font-medium">Notice</li>
+          <li class="mx-3 font-medium">Download</li>
+          <li class="mx-3 font-medium">Gallery</li>
+          <li class="mx-3 font-medium">Contact Us</li>
         </ul>
       </div>
-    </nav> -->
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars text-2xl text-white cursor-pointer"></i>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
     <!-- Slider main container -->
     <div class="swiper mySwiper w-full h-full mb-11">
       <div class="swiper-wrapper">
@@ -156,11 +214,7 @@
         <div
           class="bg-white flex justify-center items-center flex-col rounded shadow-lg shadow-green-300 cursor-pointer w-[230px] h-[250px]"
         >
-          <img
-            class="w-24 "
-            src="assets/Foreign-Exchange-1.png"
-            alt=""
-          />
+          <img class="w-24" src="assets/Foreign-Exchange-1.png" alt="" />
           <p class="mt-4 text-xl capitalize font-medium">saving schema</p>
           <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -169,11 +223,7 @@
         <div
           class="bg-white flex justify-center items-center flex-col rounded shadow-lg shadow-green-300 cursor-pointer w-[230px] h-[250px]"
         >
-          <img
-            class="w-24 "
-            src="assets/Foreign-Exchange-1.png"
-            alt=""
-          />
+          <img class="w-24" src="assets/Foreign-Exchange-1.png" alt="" />
           <p class="mt-4 text-xl capitalize font-medium">saving schema</p>
           <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -182,11 +232,7 @@
         <div
           class="bg-white flex justify-center items-center flex-col rounded shadow-lg shadow-green-300 cursor-pointer w-[230px] h-[250px]"
         >
-          <img
-            class="w-24 "
-            src="assets/Foreign-Exchange-1.png"
-            alt=""
-          />
+          <img class="w-24" src="assets/Foreign-Exchange-1.png" alt="" />
           <p class="mt-4 text-xl capitalize font-medium">saving schema</p>
           <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -195,11 +241,7 @@
         <div
           class="bg-white flex justify-center items-center flex-col rounded shadow-lg shadow-green-300 cursor-pointer w-[230px] h-[250px]"
         >
-          <img
-            class="w-24 "
-            src="assets/Foreign-Exchange-1.png"
-            alt=""
-          />
+          <img class="w-24" src="assets/Foreign-Exchange-1.png" alt="" />
           <p class="mt-4 text-xl capitalize font-medium">saving schema</p>
           <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing.
@@ -208,11 +250,7 @@
         <div
           class="bg-white flex justify-center items-center flex-col rounded shadow-lg shadow-green-300 cursor-pointer w-[230px] h-[250px]"
         >
-          <img
-            class="w-24"
-            src="assets/Foreign-Exchange-1.png"
-            alt=""
-          />
+          <img class="w-24" src="assets/Foreign-Exchange-1.png" alt="" />
           <p class="mt-4 text-xl capitalize font-medium">saving schema</p>
           <p class="text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing.
