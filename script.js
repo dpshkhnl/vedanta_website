@@ -16,20 +16,21 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // JavaScript for showing dropdown menus on hover
-// JavaScript for showing dropdown menus on hover
-document.querySelectorAll('.dropdown').forEach(function(drop) {
+// Function to handle dropdown behavior
+function handleDropdown(drop) {
   let timeout;
-  drop.addEventListener('mouseenter', function() {
+
+  drop.addEventListener('mouseenter', function () {
     clearTimeout(timeout); // Clear any previous timeout
     // Hide all other dropdowns
-    document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
       menu.classList.add('hidden');
     });
     // Show current dropdown
     this.querySelector('.dropdown-menu').classList.remove('hidden');
   });
 
-  drop.addEventListener('mouseleave', function() {
+  drop.addEventListener('mouseleave', function () {
     // Hide dropdown after a short delay
     timeout = setTimeout(() => {
       this.querySelector('.dropdown-menu').classList.add('hidden');
@@ -37,17 +38,21 @@ document.querySelectorAll('.dropdown').forEach(function(drop) {
   });
 
   // Keep the dropdown visible when the mouse is over it
-  drop.querySelector('.dropdown-menu').addEventListener('mouseenter', function() {
+  drop.querySelector('.dropdown-menu').addEventListener('mouseenter', function () {
     clearTimeout(timeout); // Clear the timeout to prevent hiding
   });
 
-  drop.querySelector('.dropdown-menu').addEventListener('mouseleave', function() {
+  drop.querySelector('.dropdown-menu').addEventListener('mouseleave', function () {
     // Hide dropdown after a short delay when the mouse leaves the dropdown content
     timeout = setTimeout(() => {
       this.classList.add('hidden');
     }, 200); // Adjust the delay as needed
   });
-});
+}
+
+// Apply dropdown behavior to all dropdown elements
+document.querySelectorAll('.dropdown').forEach(handleDropdown);
+
 
 AOS.init({
   duration: 1200,
