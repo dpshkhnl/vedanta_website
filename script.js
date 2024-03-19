@@ -17,7 +17,12 @@ var swiper = new Swiper(".mySwiper", {
 
 // JavaScript for showing dropdown menus on hover
 // Function to handle dropdown behavior
-function handleDropdown(drop) {
+function handleDropdown(drop) {drop.querySelector('.dropdown-menu').addEventListener('mouseleave', function () {
+  // Hide dropdown after a short delay when the mouse leaves the dropdown content
+  timeout = setTimeout(() => {
+    this.classList.add('hidden');
+  }, 200); // Adjust the delay as needed
+});
   let timeout;
 
   drop.addEventListener('mouseenter', function () {
